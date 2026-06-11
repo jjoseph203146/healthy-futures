@@ -8,9 +8,9 @@ import { fetchTrendingBusinesses, fetchFeaturedBusinesses } from "@/lib/queries"
 
 function getGreeting(): string {
   const etHour = ((new Date().getUTCHours() - 4) + 24) % 24;
-  if (etHour < 12) return "Good morning";
-  if (etHour < 17) return "Good afternoon";
-  return "Good evening";
+  if (etHour < 12) return "Good morning 👋";
+  if (etHour < 17) return "Good afternoon 👋";
+  return "Good evening 👋";
 }
 
 export default async function HomePage() {
@@ -27,16 +27,20 @@ export default async function HomePage() {
           <div className="flex items-center justify-between">
             <div>
               <h1 className="font-serif text-[25px] font-semibold text-brand-dark leading-tight">
-                {getGreeting()} 👋
+                {getGreeting()}
               </h1>
               <p className="text-[13px] text-brand-muted mt-1 font-semibold tracking-wide">
                 Discover · Connect · Empower
               </p>
             </div>
-            <Link href="/profile">
-              <div className="w-10 h-10 rounded-full bg-brand-brown flex items-center justify-center text-brand-light font-extrabold text-base flex-none">
-                AJ
-              </div>
+            <Link
+              href="/profile"
+              className="w-10 h-10 rounded-full bg-brand-brown flex items-center justify-center flex-none"
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="8" r="4" stroke="#F4E6CA" strokeWidth="1.8" />
+                <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" stroke="#F4E6CA" strokeWidth="1.8" strokeLinecap="round" />
+              </svg>
             </Link>
           </div>
         </div>
