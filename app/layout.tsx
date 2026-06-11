@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   formatDetection: { telephone: false },
   icons: {
     icon: "/icons/icon.svg",
-    apple: "/icons/apple-touch-icon.png",
+    apple: "/icons/icon-192.png",
   },
   openGraph: {
     title: "Healthy Futures — Black-Owned Business Directory",
