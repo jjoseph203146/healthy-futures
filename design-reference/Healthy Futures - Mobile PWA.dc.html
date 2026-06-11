@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+  .hf-canvas { font-family: 'Hanken Grotesk', system-ui, sans-serif; }
+  .clamp2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .clamp3 { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  .hf-scrollhint::-webkit-scrollbar { display: none; }
+</style>
+</helmet>
+
+<div class="hf-canvas" style="min-height:100vh;background:#E9E8E6;background-image:radial-gradient(circle at 1px 1px,rgba(59,31,10,0.05) 1px,transparent 0);background-size:26px 26px;padding:64px 48px 96px;">
+
+  <!-- ===== Title ===== -->
+  <div style="max-width:1700px;margin:0 auto 56px;display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:24px;">
+    <div>
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px;">
+        <div style="width:44px;height:44px;border-radius:13px;background:#3B1F0A;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 16px -4px rgba(59,31,10,0.45);">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.35-9.5-8.5C.8 9.7 2.3 6 5.7 6c2 0 3.3 1.2 4.3 2.6C11 7.2 12.3 6 14.3 6c3.4 0 4.9 3.7 3.2 6.5C19 16.65 12 21 12 21Z" fill="#C8860A"/></svg>
+        </div>
+        <span style="font-size:13px;font-weight:800;letter-spacing:2.5px;color:#A07A3C;text-transform:uppercase;">Healthy Futures</span>
+      </div>
+      <h1 style="font-family:'Newsreader',serif;font-weight:500;font-size:54px;line-height:1.02;color:#2A1607;margin:0;letter-spacing:-0.5px;">Healthy Futures — Mobile&nbsp;PWA</h1>
+      <p style="font-size:18px;color:#7C6A56;margin:14px 0 0;font-weight:500;">Redesigned · 8 Screens · High-Fidelity Concept</p>
+    </div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;max-width:420px;">
+      <span style="font-size:12px;font-weight:700;color:#5C4A36;background:#F5EFE6;border:1px solid #DFD3C0;padding:8px 14px;border-radius:999px;">Discover</span>
+      <span style="font-size:12px;font-weight:700;color:#5C4A36;background:#F5EFE6;border:1px solid #DFD3C0;padding:8px 14px;border-radius:999px;">Connect</span>
+      <span style="font-size:12px;font-weight:700;color:#5C4A36;background:#F5EFE6;border:1px solid #DFD3C0;padding:8px 14px;border-radius:999px;">Empower</span>
+      <span style="font-size:12px;font-weight:800;color:#F4E6CA;background:#2A1607;padding:8px 14px;border-radius:999px;display:inline-flex;gap:5px;align-items:center;white-space:nowrap;"><svg width="11" height="11" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#E0A93B" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Black-Owned Verified</span>
+    </div>
+  </div>
+
+  <!-- ===== Grid: 2 rows of 4 ===== -->
+  <div style="max-width:1700px;margin:0 auto;display:grid;grid-template-columns:repeat(4,375px);gap:48px 44px;justify-content:center;">
+
+    <!-- ░░░░░░░░░░░░░░░░░░ SCREEN 1 — HOME ░░░░░░░░░░░░░░░░░░ -->
+    <div data-screen-label="Home" style="display:flex;flex-direction:column;align-items:center;gap:16px;">
+      <div style="width:375px;height:812px;background:#F5EFE6;border-radius:46px;overflow:hidden;position:relative;display:flex;flex-direction:column;box-shadow:0 34px 70px -26px rgba(59,31,10,0.45),0 0 0 11px #140c05,0 0 0 12px #34230f;">
+        <div style="position:absolute;top:0;left:50%;transform:translateX(-50%);width:148px;height:30px;background:#140c05;border-radius:0 0 18px 18px;z-index:6;"></div>
+        <!-- status bar -->
+        <div style="height:52px;flex:none;display:flex;align-items:center;justify-content:space-between;padding:14px 28px 0 32px;position:relative;z-index:5;">
+          <span style="font-weight:700;font-size:15px;color:#2A1607;">9:41</span>
+          <div style="display:flex;align-items:center;gap:7px;color:#2A1607;">
+            <svg width="18" height="12" viewBox="0 0 18 12" fill="none"><rect x="0" y="7" width="3" height="5" rx="1" fill="#2A1607"/><rect x="5" y="4" width="3" height="8" rx="1" fill="#2A1607"/><rect x="10" y="2" width="3" height="10" rx="1" fill="#2A1607"/><rect x="15" y="0" width="3" height="12" rx="1" fill="#2A1607"/></svg>
+            <svg width="16" height="12" viewBox="0 0 16 12" fill="none"><path d="M8 11.2 1 4.4a9.7 9.7 0 0 1 14 0L8 11.2Z" stroke="#2A1607" stroke-width="1.6" fill="none"/><circle cx="8" cy="9.4" r="1.3" fill="#2A1607"/></svg>
+            <svg width="26" height="13" viewBox="0 0 26 13" fill="none"><rect x="0.6" y="0.6" width="21" height="11.8" rx="3" stroke="#2A1607" stroke-width="1.2"/><rect x="2.4" y="2.4" width="16" height="8.2" rx="1.6" fill="#2A1607"/><rect x="23" y="4" width="2" height="5" rx="1" fill="#2A1607"/></svg>
+          </div>
+        </div>
+        <!-- scroll content -->
+        <div class="hf-scrollhint" style="flex:1;overflow:hidden;display:flex;flex-direction:column;">
+          <!-- header -->
+          <div style="padding:8px 22px 18px;">
+            <div style="display:flex;align-items:center;justify-content:space-between;">
+              <div>
+                <div style="font-family:'Newsreader',serif;font-size:25px;font-weight:600;color:#2A1607;line-height:1;">Good morning 👋</div>
+                <div style="font-size:13px;color:#988671;margin-top:5px;font-weight:600;letter-spacing:0.3px;">Discover · Connect · Empower</div>
+              </div>
+              <div style="width:42px;height:42px;border-radius:50%;background:#3B1F0A;display:flex;align-items:center;justify-content:center;color:#F4E6CA;font-weight:800;font-size:16px;">AJ</div>
+            </div>
+            <!-- search -->
+            <div style="margin-top:16px;display:flex;align-items:center;gap:10px;background:#fff;border:1px solid #E8DECB;border-radius:16px;padding:13px 15px;box-shadow:0 4px 14px -8px rgba(59,31,10,0.3);">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="#A07A3C" stroke-width="2"/><path d="m20 20-3.2-3.2" stroke="#A07A3C" stroke-width="2" stroke-linecap="round"/></svg>
+              <span style="font-size:14.5px;color:#A9967E;">Search businesses, food, services…</span>
+            </div>
+            <!-- chips -->
+            <div style="display:flex;gap:8px;margin-top:14px;">
+              <span style="font-size:12px;font-weight:700;color:#fff;background:#C8860A;padding:8px 13px;border-radius:999px;display:inline-flex;align-items:center;gap:5px;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-5-7-11a7 7 0 0 1 14 0c0 6-7 11-7 11Z" stroke="#fff" stroke-width="2"/><circle cx="12" cy="10" r="2.3" fill="#fff"/></svg>Near Me</span>
+              <span style="font-size:12px;font-weight:700;color:#5C4A36;background:#fff;border:1px solid #E8DECB;padding:8px 13px;border-radius:999px;">Open Now</span>
+              <span style="font-size:12px;font-weight:700;color:#5C4A36;background:#fff;border:1px solid #E8DECB;padding:8px 13px;border-radius:999px;">Top Rated</span>
+            </div>
+          </div>
+          <!-- trending -->
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:0 22px 12px;">
+            <span style="font-size:16px;font-weight:800;color:#2A1607;">Trending Near You</span>
+            <span style="font-size:12px;font-weight:700;color:#C8860A;">See all</span>
+          </div>
+          <div class="hf-scrollhint" style="display:flex;gap:14px;padding:0 22px 18px;overflow:hidden;">
+            <div style="width:188px;flex:none;background:#fff;border:1px solid #ECE3D4;border-radius:18px;overflow:hidden;box-shadow:0 8px 20px -14px rgba(59,31,10,0.35);">
+              <div style="height:104px;background:repeating-linear-gradient(135deg,#EFE3CE,#EFE3CE 8px,#E6D6BC 8px,#E6D6BC 16px);position:relative;">
+                <span style="position:absolute;top:9px;left:9px;font-size:9px;font-weight:800;color:#F4E6CA;background:#2A1607;padding:3px 7px;border-radius:999px;display:inline-flex;gap:3px;align-items:center;"><svg width="8" height="8" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#E0A93B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>BLACK-OWNED</span>
+                <span style="position:absolute;bottom:9px;right:9px;font-size:9px;font-weight:800;color:#1F8A5B;background:#E4F1EA;padding:3px 7px;border-radius:999px;">OPEN</span>
+              </div>
+              <div style="padding:11px 12px 13px;">
+                <div style="font-size:14px;font-weight:800;color:#2A1607;">Mama's Southern Kitchen</div>
+                <div style="font-size:11.5px;color:#988671;margin-top:2px;">Soul Food · $$</div>
+                <div style="margin-top:8px;font-size:12px;font-weight:700;color:#2A1607;"><span style="color:#C8860A;">★</span> 4.9 <span style="color:#A9967E;font-weight:500;">· 0.4 mi</span></div>
+              </div>
+            </div>
+            <div style="width:188px;flex:none;background:#fff;border:1px solid #ECE3D4;border-radius:18px;overflow:hidden;box-shadow:0 8px 20px -14px rgba(59,31,10,0.35);">
+              <div style="height:104px;background:repeating-linear-gradient(135deg,#E9E0D0,#E9E0D0 8px,#DED2BE 8px,#DED2BE 16px);position:relative;">
+                <span style="position:absolute;top:9px;left:9px;font-size:9px;font-weight:800;color:#F4E6CA;background:#2A1607;padding:3px 7px;border-radius:999px;display:inline-flex;gap:3px;align-items:center;"><svg width="8" height="8" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#E0A93B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>BLACK-OWNED</span>
+                <span style="position:absolute;bottom:9px;right:9px;font-size:9px;font-weight:800;color:#1F8A5B;background:#E4F1EA;padding:3px 7px;border-radius:999px;">OPEN</span>
+              </div>
+              <div style="padding:11px 12px 13px;">
+                <div style="font-size:14px;font-weight:800;color:#2A1607;">Crown Beauty Studio</div>
+                <div style="font-size:11.5px;color:#988671;margin-top:2px;">Hair & Beauty</div>
+                <div style="margin-top:8px;font-size:12px;font-weight:700;color:#2A1607;"><span style="color:#C8860A;">★</span> 4.8 <span style="color:#A9967E;font-weight:500;">· 0.7 mi</span></div>
+              </div>
+            </div>
+          </div>
+          <!-- categories -->
+          <div style="padding:2px 22px 10px;font-size:16px;font-weight:800;color:#2A1607;">Browse by Category</div>
+          <div style="padding:0 22px;display:grid;grid-template-columns:repeat(4,1fr);gap:11px 9px;">
+            <div style="display:flex;flex-direction:column;align-items:center;gap:7px;"><div style="width:56px;height:56px;border-radius:18px;background:#fff;border:1px solid #ECE3D4;display:flex;align-items:center;justify-content:center;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M5 3v8a3 3 0 0 0 6 0V3M8 3v18M19 3c-1.5 0-3 2-3 5s.5 4 3 4v9" stroke="#C8860A" stroke-width="1.8" stroke-linecap="round"/></svg></div><span style="font-size:10.5px;font-weight:600;color:#5C4A36;text-align:center;line-height:1.15;">Food &amp; Dining</span></div>
+            <div style="display:flex;flex-direction:column;align-items:center;gap:7px;"><div style="width:56px;height:56px;border-radius:18px;background:#fff;border:1px solid #ECE3D4;display:flex;align-items:center;justify-content:center;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 3a3 3 0 1 1 6 0c0 3-3 4-3 7m0 4v.01M5 14c0 4 3 7 7 7s7-3 7-7" stroke="#C8860A" stroke-width="1.8" stroke-linecap="round"/></svg></div><span style="font-size:10.5px;font-weight:600;color:#5C4A36;text-align:center;">Beauty</span></div>
+            <div style="display:flex;flex-direction:column;align-items:center;gap:7px;"><div style="width:56px;height:56px;border-radius:18px;background:#fff;border:1px solid #ECE3D4;display:flex;align-items:center;justify-content:center;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-5-7-11a7 7 0 0 1 14 0c0 6-7 11-7 11Z" stroke="#C8860A" stroke-width="1.8"/><path d="M9 9h6M12 6v6" stroke="#C8860A" stroke-width="1.8" stroke-linecap="round"/></svg></div><span style="font-size:10.5px;font-weight:600;color:#5C4A36;text-align:center;">Health</span></div>
+            <div style="display:flex;flex-direction:column;align-items:center;gap:7px;"><div style="width:56px;height:56px;border-radius:18px;background:#fff;border:1px solid #ECE3D4;display:flex;align-items:center;justify-content:center;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 8h12l1 12H5L6 8Z" stroke="#C8860A" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8a3 3 0 0 1 6 0" stroke="#C8860A" stroke-width="1.8"/></svg></div><span style="font-size:10.5px;font-weight:600;color:#5C4A36;text-align:center;">Retail</span></div>
+            <div style="display:flex;flex-direction:column;align-items:center;gap:7px;"><div style="width:56px;height:56px;border-radius:18px;background:#fff;border:1px solid #ECE3D4;display:flex;align-items:center;justify-content:center;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 16v-3l2-5h12l2 5v3M6 16v2M18 16v2M3 13h18" stroke="#C8860A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span style="font-size:10.5px;font-weight:600;color:#5C4A36;text-align:center;">Auto</span></div>
+            <div style="display:flex;flex-direction:column;align-items:center;gap:7px;"><div style="width:56px;height:56px;border-radius:18px;background:#fff;border:1px solid #ECE3D4;display:flex;align-items:center;justify-content:center;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M14.7 6.3a3 3 0 0 0-4.2 4.2l-6 6 2 2 6-6a3 3 0 0 0 4.2-4.2l-2 2-2-2 2-2Z" stroke="#C8860A" stroke-width="1.8" stroke-linejoin="round"/></svg></div><span style="font-size:10.5px;font-weight:600;color:#5C4A36;text-align:center;">Services</span></div>
+            <div style="display:flex;flex-direction:column;align-items:center;gap:7px;"><div style="width:56px;height:56px;border-radius:18px;background:#fff;border:1px solid #ECE3D4;display:flex;align-items:center;justify-content:center;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 11 12 4l8 7M6 10v9h12v-9" stroke="#C8860A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span style="font-size:10.5px;font-weight:600;color:#5C4A36;text-align:center;line-height:1.15;">Home Svcs</span></div>
+            <div style="display:flex;flex-direction:column;align-items:center;gap:7px;"><div style="width:56px;height:56px;border-radius:18px;background:#fff;border:1px solid #ECE3D4;display:flex;align-items:center;justify-content:center;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 3v18M5 7l7-4 7 4M5 7v8c0 2 3 3 7 3s7-1 7-3V7" stroke="#C8860A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span style="font-size:10.5px;font-weight:600;color:#5C4A36;text-align:center;line-height:1.15;">Arts &amp; Culture</span></div>
+          </div>
+        </div>
+        <!-- bottom nav: Home active -->
+        <div style="height:74px;flex:none;background:rgba(255,255,255,0.94);backdrop-filter:blur(10px);border-top:1px solid #ECE3D4;display:flex;align-items:center;justify-content:space-around;padding:8px 12px 16px;">
+          <div style="display:flex;flex-direction:column;align-items:center;gap:4px;color:#3B1F0A;"><svg width="23" height="23" viewBox="0 0 24 24" fill="none"><path d="M4 11 12 4l8 7M6 10v9h12v-9" stroke="#3B1F0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span style="font-size:10px;font-weight:800;">Home</span></div>
+          <div style="display:flex;flex-direction:column;align-items:center;gap:4px;color:#B0A18E;"><svg width="23" height="23" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="#B0A18E" stroke-width="2"/><path d="m20 20-3.2-3.2" stroke="#B0A18E" stroke-width="2" stroke-linecap="round"/></svg><span style="font-size:10px;font-weight:600;">Search</span></div>
+          <div style="display:flex;flex-direction:column;align-items:center;gap:4px;color:#B0A18E;"><svg width="23" height="23" viewBox="0 0 24 24" fill="none"><path d="M6 4h12v16l-6-4-6 4V4Z" stroke="#B0A18E" stroke-width="2" stroke-linejoin="round"/></svg><span style="font-size:10px;font-weight:600;">Saved</span></div>
+          <div style="display:flex;flex-direction:column;align-items:center;gap:4px;color:#B0A18E;"><svg width="23" height="23" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.6" stroke="#B0A18E" stroke-width="2"/><path d="M5 20c0-3.3 3.1-5.5 7-5.5s7 2.2 7 5.5" stroke="#B0A18E" stroke-width="2" stroke-linecap="round"/></svg><span style="font-size:10px;font-weight:600;">Profile</span></div>
+        </div>
+      </div>
+      <span style="font-size:12px;font-weight:800;letter-spacing:2px;color:#8A7560;text-transform:uppercase;">01 · Home</span>
+    </div>
+
+    <!-- ░░░░░░░░░░░░░░░░░░ SCREEN 2 — SEARCH RESULTS ░░░░░░░░░░░░░░░░░░ -->
+    <div data-screen-label="Search Results" style="display:flex;flex-direction:column;align-items:center;gap:16px;">
+      <div style="width:375px;height:812px;background:#F5EFE6;border-radius:46px;overflow:hidden;position:relative;display:flex;flex-direction:column;box-shadow:0 34px 70px -26px rgba(59,31,10,0.45),0 0 0 11px #140c05,0 0 0 12px #34230f;">
+        <div style="position:absolute;top:0;left:50%;transform:translateX(-50%);width:148px;height:30px;background:#140c05;border-radius:0 0 18px 18px;z-index:6;"></div>
+        <div style="height:52px;flex:none;display:flex;align-items:center;justify-content:space-between;padding:14px 28px 0 32px;position:relative;z-index:5;">
+          <span style="font-weight:700;font-size:15px;color:#2A1607;">9:41</span>
+          <div style="display:flex;align-items:center;gap:7px;color:#2A1607;">
+            <svg width="18" height="12" viewBox="0 0 18 12" fill="none"><rect x="0" y="7" width="3" height="5" rx="1" fill="#2A1607"/><rect x="5" y="4" width="3" height="8" rx="1" fill="#2A1607"/><rect x="10" y="2" width="3" height="10" rx="1" fill="#2A1607"/><rect x="15" y="0" width="3" height="12" rx="1" fill="#2A1607"/></svg>
+            <svg width="16" height="12" viewBox="0 0 16 12" fill="none"><path d="M8 11.2 1 4.4a9.7 9.7 0 0 1 14 0L8 11.2Z" stroke="#2A1607" stroke-width="1.6" fill="none"/><circle cx="8" cy="9.4" r="1.3" fill="#2A1607"/></svg>
+            <svg width="26" height="13" viewBox="0 0 26 13" fill="none"><rect x="0.6" y="0.6" width="21" height="11.8" rx="3" stroke="#2A1607" stroke-width="1.2"/><rect x="2.4" y="2.4" width="16" height="8.2" rx="1.6" fill="#2A1607"/><rect x="23" y="4" width="2" height="5" rx="1" fill="#2A1607"/></svg>
+          </div>
+        </div>
+        <!-- search header -->
+        <div style="padding:6px 22px 12px;flex:none;">
+          <div style="display:flex;align-items:center;gap:11px;background:#fff;border:1.5px solid #C8860A;border-radius:16px;padding:12px 14px;box-shadow:0 4px 14px -8px rgba(200,134,10,0.4);">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="#C8860A" stroke-width="2"/><path d="m20 20-3.2-3.2" stroke="#C8860A" stroke-width="2" stroke-linecap="round"/></svg>
+            <span style="font-size:14.5px;color:#2A1607;font-weight:700;flex:1;">Food &amp; Dining</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6 6 18" stroke="#A9967E" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <!-- tabs -->
+          <div style="display:flex;gap:7px;margin-top:13px;">
+            <span style="font-size:12px;font-weight:800;color:#fff;background:#3B1F0A;padding:7px 13px;border-radius:999px;">All</span>
+            <span style="font-size:12px;font-weight:700;color:#5C4A36;background:#fff;border:1px solid #E8DECB;padding:7px 13px;border-radius:999px;">Open Now</span>
+            <span style="font-size:12px;font-weight:700;color:#5C4A36;background:#fff;border:1px solid #E8DECB;padding:7px 13px;border-radius:999px;">Top Rated</span>
+            <span style="font-size:12px;font-weight:700;color:#5C4A36;background:#fff;border:1px solid #E8DECB;padding:7px 13px;border-radius:999px;">Nearby</span>
+          </div>
+          <div style="margin-top:13px;font-size:12.5px;color:#988671;font-weight:600;"><b style="color:#2A1607;">24 results</b> · Augusta, GA</div>
+        </div>
+        <!-- results list -->
+        <div class="hf-scrollhint" style="flex:1;overflow:hidden;padding:0 18px;display:flex;flex-direction:column;gap:12px;">
+          <!-- card sponsored -->
+          <div style="display:flex;gap:12px;background:#fff;border:1px solid #ECE3D4;border-radius:18px;padding:12px;">
+            <div style="width:78px;height:78px;border-radius:14px;flex:none;background:repeating-linear-gradient(135deg,#EFE3CE,#EFE3CE 7px,#E6D6BC 7px,#E6D6BC 14px);"></div>
+            <div style="flex:1;min-width:0;">
+              <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:6px;">
+                <div style="min-width:0;"><div style="font-size:14.5px;font-weight:800;color:#2A1607;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Mama's Southern Kitchen</div><div style="font-size:11.5px;color:#988671;margin-top:1px;">Soul Food · 0.4 mi</div></div>
+                <span style="font-size:9px;font-weight:800;color:#1F8A5B;background:#E4F1EA;padding:3px 7px;border-radius:999px;flex:none;">OPEN</span>
+              </div>
+              <div class="clamp2" style="font-size:11.5px;color:#7C6A56;margin-top:5px;line-height:1.35;">Hearty Southern classics — fried catfish, collards &amp; sweet tea, made from scratch.</div>
+              <div style="display:flex;align-items:center;gap:7px;margin-top:7px;flex-wrap:wrap;">
+                <span style="font-size:11.5px;font-weight:800;color:#2A1607;"><span style="color:#C8860A;">★</span> 4.9 <span style="color:#A9967E;font-weight:500;">(312)</span></span>
+                <span style="font-size:9px;font-weight:800;color:#F4E6CA;background:#2A1607;padding:3px 6px;border-radius:999px;display:inline-flex;gap:3px;align-items:center;"><svg width="8" height="8" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#E0A93B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>BLACK-OWNED</span>
+                <span style="font-size:8.5px;font-weight:800;color:#A78A5E;letter-spacing:0.5px;margin-left:auto;">SPONSORED</span>
+              </div>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div style="display:flex;gap:12px;background:#fff;border:1px solid #ECE3D4;border-radius:18px;padding:12px;">
+            <div style="width:78px;height:78px;border-radius:14px;flex:none;background:repeating-linear-gradient(135deg,#E9E0D0,#E9E0D0 7px,#DED2BE 7px,#DED2BE 14px);"></div>
+            <div style="flex:1;min-width:0;">
+              <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:6px;">
+                <div style="min-width:0;"><div style="font-size:14.5px;font-weight:800;color:#2A1607;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">The Sweet Auburn Café</div><div style="font-size:11.5px;color:#988671;margin-top:1px;">Café · Brunch · 0.9 mi</div></div>
+                <span style="font-size:9px;font-weight:800;color:#1F8A5B;background:#E4F1EA;padding:3px 7px;border-radius:999px;flex:none;">OPEN</span>
+              </div>
+              <div class="clamp2" style="font-size:11.5px;color:#7C6A56;margin-top:5px;line-height:1.35;">Cozy neighborhood spot for shrimp &amp; grits, peach cobbler and locally roasted coffee.</div>
+              <div style="display:flex;align-items:center;gap:7px;margin-top:7px;">
+                <span style="font-size:11.5px;font-weight:800;color:#2A1607;"><span style="color:#C8860A;">★</span> 4.7 <span style="color:#A9967E;font-weight:500;">(188)</span></span>
+                <span style="font-size:9px;font-weight:800;color:#F4E6CA;background:#2A1607;padding:3px 6px;border-radius:999px;display:inline-flex;gap:3px;align-items:center;"><svg width="8" height="8" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#E0A93B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>BLACK-OWNED</span>
+              </div>
+            </div>
+          </div>
+          <!-- card 3 closed -->
+          <div style="display:flex;gap:12px;background:#fff;border:1px solid #ECE3D4;border-radius:18px;padding:12px;">
+            <div style="width:78px;height:78px;border-radius:14px;flex:none;background:repeating-linear-gradient(135deg,#EAE1CF,#EAE1CF 7px,#E0D4BD 7px,#E0D4BD 14px);"></div>
+            <div style="flex:1;min-width:0;">
+              <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:6px;">
+                <div style="min-width:0;"><div style="font-size:14.5px;font-weight:800;color:#2A1607;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Lowcountry Boil House</div><div style="font-size:11.5px;color:#988671;margin-top:1px;">Seafood · 1.3 mi</div></div>
+                <span style="font-size:9px;font-weight:800;color:#C0492F;background:#F6E5E1;padding:3px 7px;border-radius:999px;flex:none;">CLOSED</span>
+              </div>
+              <div class="clamp2" style="font-size:11.5px;color:#7C6A56;margin-top:5px;line-height:1.35;">Gullah-Geechee seafood boils, crab cakes and family-style platters. Opens 4 PM.</div>
+              <div style="display:flex;align-items:center;gap:7px;margin-top:7px;">
+                <span style="font-size:11.5px;font-weight:800;color:#2A1607;"><span style="color:#C8860A;">★</span> 4.6 <span style="color:#A9967E;font-weight:500;">(95)</span></span>
+                <span style="font-size:9px;font-weight:800;color:#F4E6CA;background:#2A1607;padding:3px 6px;border-radius:999px;display:inline-flex;gap:3px;align-items:center;"><svg width="8" height="8" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#E0A93B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>BLACK-OWNED</span>
+              </div>
+            </div>
+          </div>
+          <!-- card 4 -->
+          <div style="display:flex;gap:12px;background:#fff;border:1px solid #ECE3D4;border-radius:18px;padding:12px;">
+            <div style="width:78px;height:78px;border-radius:14px;flex:none;background:repeating-linear-gradient(135deg,#EFE3CE,#EFE3CE 7px,#E6D6BC 7px,#E6D6BC 14px);"></div>
+            <div style="flex:1;min-width:0;">
+              <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:6px;">
+                <div style="min-width:0;"><div style="font-size:14.5px;font-weight:800;color:#2A1607;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Peach &amp; Pecan Bakery</div><div style="font-size:11.5px;color:#988671;margin-top:1px;">Bakery · Desserts · 1.8 mi</div></div>
+                <span style="font-size:9px;font-weight:800;color:#1F8A5B;background:#E4F1EA;padding:3px 7px;border-radius:999px;flex:none;">OPEN</span>
+              </div>
+              <div class="clamp2" style="font-size:11.5px;color:#7C6A56;margin-top:5px;line-height:1.35;">Small-batch peach hand pies, pralines and celebration cakes baked fresh daily.</div>
+              <div style="display:flex;align-items:center;gap:7px;margin-top:7px;">
+                <span style="font-size:11.5px;font-weight:800;color:#2A1607;"><span style="color:#C8860A;">★</span> 4.8 <span style="color:#A9967E;font-weight:500;">(140)</span></span>
+                <span style="font-size:9px;font-weight:800;color:#F4E6CA;background:#2A1607;padding:3px 6px;border-radius:999px;display:inline-flex;gap:3px;align-items:center;"><svg width="8" height="8" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#E0A93B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>BLACK-OWNED</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- bottom nav: Search active -->
+        <div style="height:74px;flex:none;background:rgba(255,255,255,0.94);backdrop-filter:blur(10px);border-top:1px solid #ECE3D4;display:flex;align-items:center;justify-content:space-around;padding:8px 12px 16px;">
+          <div style="display:flex;flex-direction:column;align-items:center;gap:4px;color:#B0A18E;"><svg width="23" height="23" viewBox="0 0 24 24" fill="none"><path d="M4 11 12 4l8 7M6 10v9h12v-9" stroke="#B0A18E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span style="font-size:10px;font-weight:600;">Home</span></div>
+          <div style="display:flex;flex-direction:column;align-items:center;gap:4px;color:#3B1F0A;"><svg width="23" height="23" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="#3B1F0A" stroke-width="2"/><path d="m20 20-3.2-3.2" stroke="#3B1F0A" stroke-width="2" stroke-linecap="round"/></svg><span style="font-size:10px;font-weight:800;">Search</span></div>
+          <div style="display:flex;flex-direction:column;align-items:center;gap:4px;color:#B0A18E;"><svg width="23" height="23" viewBox="0 0 24 24" fill="none"><path d="M6 4h12v16l-6-4-6 4V4Z" stroke="#B0A18E" stroke-width="2" stroke-linejoin="round"/></svg><span style="font-size:10px;font-weight:600;">Saved</span></div>
+          <div style="display:flex;flex-direction:column;align-items:center;gap:4px;color:#B0A18E;"><svg width="23" height="23" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.6" stroke="#B0A18E" stroke-width="2"/><path d="M5 20c0-3.3 3.1-5.5 7-5.5s7 2.2 7 5.5" stroke="#B0A18E" stroke-width="2" stroke-linecap="round"/></svg><span style="font-size:10px;font-weight:600;">Profile</span></div>
+        </div>
+      </div>
+      <span style="font-size:12px;font-weight:800;letter-spacing:2px;color:#8A7560;text-transform:uppercase;">02 · Search Results</span>
+    </div>
+
+    <!-- ░░░░░░░░░░░░░░░░░░ SCREEN 3 — BUSINESS PROFILE ░░░░░░░░░░░░░░░░░░ -->
+    <div data-screen-label="Business Profile" style="display:flex;flex-direction:column;align-items:center;gap:16px;">
+      <div style="width:375px;height:812px;background:#F5EFE6;border-radius:46px;overflow:hidden;position:relative;display:flex;flex-direction:column;box-shadow:0 34px 70px -26px rgba(59,31,10,0.45),0 0 0 11px #140c05,0 0 0 12px #34230f;">
+        <div class="hf-scrollhint" style="flex:1;overflow:hidden;display:flex;flex-direction:column;">
+          <!-- hero -->
+          <div style="height:228px;flex:none;background:repeating-linear-gradient(135deg,#E7D9BE,#E7D9BE 10px,#DCC9A6 10px,#DCC9A6 20px);position:relative;">
+            <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,12,5,0.35) 0%,transparent 30%,transparent 55%,rgba(20,12,5,0.55) 100%);"></div>
+            <div style="position:absolute;top:50%;left:0;right:0;text-align:center;transform:translateY(-50%);font-family:ui-monospace,monospace;font-size:11px;letter-spacing:1px;color:#8a6f3f;">[ HERO IMAGE ]</div>
+            <!-- status bar over hero -->
+            <div style="position:relative;z-index:3;height:52px;display:flex;align-items:center;justify-content:space-between;padding:14px 28px 0 26px;">
+              <div style="width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,0.92);display:flex;align-items:center;justify-content:center;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M14 6l-6 6 6 6" stroke="#2A1607" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <div style="display:flex;gap:9px;">
+                <div style="width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,0.92);display:flex;align-items:center;justify-content:center;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M12 20s-7-5-7-11a7 7 0 0 1 14 0c0 6-7 11-7 11Z" stroke="#2A1607" stroke-width="2"/><circle cx="12" cy="9" r="2.2" fill="#2A1607"/></svg></div>
+                <div style="width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,0.92);display:flex;align-items:center;justify-content:center;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M6 4h12v16l-6-4-6 4V4Z" stroke="#C8860A" fill="#C8860A" stroke-width="2" stroke-linejoin="round"/></svg></div>
+              </div>
+            </div>
+          </div>
+          <!-- title block -->
+          <div style="padding:16px 22px 0;">
+            <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+              <h2 style="font-family:'Newsreader',serif;font-size:25px;font-weight:600;color:#2A1607;margin:0;line-height:1.05;">Mama's Southern Kitchen</h2>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;margin-top:7px;flex-wrap:wrap;">
+              <span style="font-size:13px;color:#988671;font-weight:600;">Soul Food · Augusta, GA</span>
+              <span style="font-size:10px;font-weight:800;color:#F4E6CA;background:#2A1607;padding:3px 8px;border-radius:999px;display:inline-flex;gap:4px;align-items:center;"><svg width="9" height="9" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#E0A93B" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>BLACK-OWNED</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:6px;margin-top:9px;">
+              <span style="font-size:14px;color:#C8860A;letter-spacing:1px;">★★★★★</span>
+              <span style="font-size:13px;font-weight:800;color:#2A1607;">4.9</span>
+              <span style="font-size:12.5px;color:#988671;">(312 reviews)</span>
+            </div>
+            <!-- actions -->
+            <div style="display:flex;gap:9px;margin-top:15px;">
+              <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:5px;background:#3B1F0A;color:#F4E6CA;border-radius:14px;padding:11px 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 4h3l1.5 4-2 1.5a11 11 0 0 0 5 5l1.5-2 4 1.5v3a2 2 0 0 1-2 2A15 15 0 0 1 3 6a2 2 0 0 1 2-2Z" stroke="#F4E6CA" stroke-width="1.8" stroke-linejoin="round"/></svg><span style="font-size:11px;font-weight:700;">Call</span></div>
+              <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:5px;background:#fff;border:1px solid #E8DECB;color:#3B1F0A;border-radius:14px;padding:11px 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#3B1F0A" stroke-width="1.8"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15 0 18M12 3c-2.5 2.5-2.5 15 0 18" stroke="#3B1F0A" stroke-width="1.8"/></svg><span style="font-size:11px;font-weight:700;">Website</span></div>
+              <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:5px;background:#fff;border:1px solid #E8DECB;color:#3B1F0A;border-radius:14px;padding:11px 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="m21 3-9 18-2-7-7-2 18-9Z" stroke="#3B1F0A" stroke-width="1.8" stroke-linejoin="round"/></svg><span style="font-size:11px;font-weight:700;">Directions</span></div>
+            </div>
+          </div>
+          <!-- about -->
+          <div style="padding:18px 22px 0;">
+            <div style="font-size:11px;font-weight:800;letter-spacing:1.5px;color:#A07A3C;text-transform:uppercase;margin-bottom:8px;">About</div>
+            <p style="font-size:13px;color:#5C4A36;line-height:1.5;margin:0;">Family-owned since 1998, Mama's serves authentic Southern soul food made from recipes passed down three generations. Fried catfish, smothered pork chops, collard greens… <span style="color:#C8860A;font-weight:700;">Read more</span></p>
+          </div>
+          <!-- info links -->
+          <div style="padding:16px 22px 0;display:flex;flex-direction:column;gap:12px;">
+            <div style="display:flex;align-items:center;gap:11px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-5-7-11a7 7 0 0 1 14 0c0 6-7 11-7 11Z" stroke="#C8860A" stroke-width="1.8"/><circle cx="12" cy="10" r="2.3" stroke="#C8860A" stroke-width="1.8"/></svg><span style="font-size:13px;color:#3B1F0A;font-weight:600;">1142 Broad St, Augusta, GA 30901</span></div>
+            <div style="display:flex;align-items:center;gap:11px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#C8860A" stroke-width="1.8"/><path d="M12 7v5l3 2" stroke="#C8860A" stroke-width="1.8" stroke-linecap="round"/></svg><span style="font-size:13px;color:#3B1F0A;font-weight:600;">Open · Closes 9 PM</span><span style="font-size:11px;color:#988671;">· Mon–Sat</span></div>
+            <div style="display:flex;align-items:center;gap:11px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#C8860A" stroke-width="1.8"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15 0 18M12 3c-2.5 2.5-2.5 15 0 18" stroke="#C8860A" stroke-width="1.8"/></svg><span style="font-size:13px;color:#C8860A;font-weight:700;">mamassouthernkitchen.com</span></div>
+          </div>
+          <!-- map -->
+          <div style="padding:16px 22px 0;">
+            <div style="height:118px;border-radius:16px;overflow:hidden;position:relative;background:#E3E7DD;background-image:linear-gradient(#D7DCCF 1px,transparent 1px),linear-gradient(90deg,#D7DCCF 1px,transparent 1px);background-size:26px 26px;border:1px solid #DDD4C2;">
+              <div style="position:absolute;top:42%;left:46%;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 22s-7-5-7-11a7 7 0 0 1 14 0c0 6-7 11-7 11Z" fill="#C8860A"/><circle cx="12" cy="11" r="2.6" fill="#fff"/></svg></div>
+              <span style="position:absolute;bottom:10px;right:12px;font-size:11px;font-weight:800;color:#C8860A;background:rgba(255,255,255,0.95);padding:5px 10px;border-radius:999px;">View Full Map →</span>
+            </div>
+          </div>
+          <!-- reviews -->
+          <div style="padding:18px 22px 0;display:flex;align-items:center;justify-content:space-between;">
+            <span style="font-size:16px;font-weight:800;color:#2A1607;">Reviews</span>
+            <span style="font-size:11px;font-weight:800;color:#fff;background:#C8860A;padding:7px 12px;border-radius:999px;">＋ Write a Review</span>
+          </div>
+          <div style="padding:12px 22px 22px;display:flex;flex-direction:column;gap:13px;">
+            <div style="background:#fff;border:1px solid #ECE3D4;border-radius:16px;padding:13px;">
+              <div style="display:flex;align-items:center;gap:10px;"><div style="width:34px;height:34px;border-radius:50%;background:#C8860A;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px;">TR</div><div style="flex:1;"><div style="font-size:13px;font-weight:800;color:#2A1607;">Tasha R.</div><div style="font-size:11px;color:#A9967E;">2 weeks ago</div></div><span style="font-size:12px;color:#C8860A;">★★★★★</span></div>
+              <p style="font-size:12.5px;color:#5C4A36;line-height:1.45;margin:9px 0 0;">Best soul food in Augusta, hands down. The catfish melts in your mouth and the staff treats you like family.</p>
+            </div>
+            <div style="background:#fff;border:1px solid #ECE3D4;border-radius:16px;padding:13px;">
+              <div style="display:flex;align-items:center;gap:10px;"><div style="width:34px;height:34px;border-radius:50%;background:#3B1F0A;color:#F4E6CA;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px;">MJ</div><div style="flex:1;"><div style="font-size:13px;font-weight:800;color:#2A1607;">Marcus J.</div><div style="font-size:11px;color:#A9967E;">1 month ago</div></div><span style="font-size:12px;color:#C8860A;">★★★★★</span></div>
+              <p style="font-size:12.5px;color:#5C4A36;line-height:1.45;margin:9px 0 0;">Proud to support a Black-owned staple of our community. Generous portions and the cobbler is unreal.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span style="font-size:12px;font-weight:800;letter-spacing:2px;color:#8A7560;text-transform:uppercase;">03 · Business Profile</span>
+    </div>
+
+    <!-- ░░░░░░░░░░░░░░░░░░ SCREEN 4 — SAVED ░░░░░░░░░░░░░░░░░░ -->
+    <div data-screen-label="Saved Businesses" style="display:flex;flex-direction:column;align-items:center;gap:16px;">
+      <div style="width:375px;height:812px;background:#F5EFE6;border-radius:46px;overflow:hidden;position:relative;display:flex;flex-direction:column;box-shadow:0 34px 70px -26px rgba(59,31,10,0.45),0 0 0 11px #140c05,0 0 0 12px #34230f;">
+        <div style="position:absolute;top:0;left:50%;transform:translateX(-50%);width:148px;height:30px;background:#140c05;border-radius:0 0 18px 18px;z-index:6;"></div>
+        <div style="height:52px;flex:none;display:flex;align-items:center;justify-content:space-between;padding:14px 28px 0 32px;position:relative;z-index:5;">
+          <span style="font-weight:700;font-size:15px;color:#2A1607;">9:41</span>
+          <div style="display:flex;align-items:center;gap:7px;color:#2A1607;">
+            <svg width="18" height="12" viewBox="0 0 18 12" fill="none"><rect x="0" y="7" width="3" height="5" rx="1" fill="#2A1607"/><rect x="5" y="4" width="3" height="8" rx="1" fill="#2A1607"/><rect x="10" y="2" width="3" height="10" rx="1" fill="#2A1607"/><rect x="15" y="0" width="3" height="12" rx="1" fill="#2A1607"/></svg>
+            <svg width="16" height="12" viewBox="0 0 16 12" fill="none"><path d="M8 11.2 1 4.4a9.7 9.7 0 0 1 14 0L8 11.2Z" stroke="#2A1607" stroke-width="1.6" fill="none"/><circle cx="8" cy="9.4" r="1.3" fill="#2A1607"/></svg>
+            <svg width="26" height="13" viewBox="0 0 26 13" fill="none"><rect x="0.6" y="0.6" width="21" height="11.8" rx="3" stroke="#2A1607" stroke-width="1.2"/><rect x="2.4" y="2.4" width="16" height="8.2" rx="1.6" fill="#2A1607"/><rect x="23" y="4" width="2" height="5" rx="1" fill="#2A1607"/></svg>
+          </div>
+        </div>
+        <div style="padding:8px 22px 14px;flex:none;">
+          <h2 style="font-family:'Newsreader',serif;font-size:27px;font-weight:600;color:#2A1607;margin:0;">Saved</h2>
+          <div style="font-size:12.5px;color:#988671;margin-top:4px;font-weight:600;">6 businesses you love</div>
+        </div>
+        <div class="hf-scrollhint" style="flex:1;overflow:hidden;padding:0 18px;display:flex;flex-direction:column;gap:12px;">
+          <div style="display:flex;gap:12px;background:#fff;border:1px solid #ECE3D4;border-radius:18px;padding:12px;position:relative;">
+            <div style="width:74px;height:74px;border-radius:14px;flex:none;background:repeating-linear-gradient(135deg,#E9E0D0,#E9E0D0 7px,#DED2BE 7px,#DED2BE 14px);"></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font-size:14.5px;font-weight:800;color:#2A1607;">Crown Beauty Studio</div>
+              <div style="font-size:11.5px;color:#988671;margin-top:1px;">Hair &amp; Beauty · 0.7 mi</div>
+              <div class="clamp2" style="font-size:11.5px;color:#7C6A56;margin-top:5px;line-height:1.35;">Luxury natural-hair care, protective styles and skincare for every crown.</div>
+              <div style="display:flex;align-items:center;gap:7px;margin-top:6px;"><span style="font-size:11.5px;font-weight:800;color:#2A1607;"><span style="color:#C8860A;">★</span> 4.8</span><span style="font-size:9px;font-weight:800;color:#F4E6CA;background:#2A1607;padding:3px 6px;border-radius:999px;display:inline-flex;gap:3px;align-items:center;"><svg width="8" height="8" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#E0A93B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>BLACK-OWNED</span></div>
+            </div>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#C8860A" style="position:absolute;top:13px;right:13px;"><path d="M6 4h12v16l-6-4-6 4V4Z"/></svg>
+          </div>
+          <div style="display:flex;gap:12px;background:#fff;border:1px solid #ECE3D4;border-radius:18px;padding:12px;position:relative;">
+            <div style="width:74px;height:74px;border-radius:14px;flex:none;background:repeating-linear-gradient(135deg,#EFE3CE,#EFE3CE 7px,#E6D6BC 7px,#E6D6BC 14px);"></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font-size:14.5px;font-weight:800;color:#2A1607;">Mama's Southern Kitchen</div>
+              <div style="font-size:11.5px;color:#988671;margin-top:1px;">Soul Food · 0.4 mi</div>
+              <div class="clamp2" style="font-size:11.5px;color:#7C6A56;margin-top:5px;line-height:1.35;">Hearty Southern classics made from scratch since 1998.</div>
+              <div style="display:flex;align-items:center;gap:7px;margin-top:6px;"><span style="font-size:11.5px;font-weight:800;color:#2A1607;"><span style="color:#C8860A;">★</span> 4.9</span><span style="font-size:9px;font-weight:800;color:#F4E6CA;background:#2A1607;padding:3px 6px;border-radius:999px;display:inline-flex;gap:3px;align-items:center;"><svg width="8" height="8" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#E0A93B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>BLACK-OWNED</span></div>
+            </div>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#C8860A" style="position:absolute;top:13px;right:13px;"><path d="M6 4h12v16l-6-4-6 4V4Z"/></svg>
+          </div>
+          <div style="display:flex;gap:12px;background:#fff;border:1px solid #ECE3D4;border-radius:18px;padding:12px;position:relative;">
+            <div style="width:74px;height:74px;border-radius:14px;flex:none;background:repeating-linear-gradient(135deg,#EAE1CF,#EAE1CF 7px,#E0D4BD 7px,#E0D4BD 14px);"></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font-size:14.5px;font-weight:800;color:#2A1607;">Forrest &amp; Co. Barbershop</div>
+              <div style="font-size:11.5px;color:#988671;margin-top:1px;">Barber · 1.0 mi</div>
+              <div class="clamp2" style="font-size:11.5px;color:#7C6A56;margin-top:5px;line-height:1.35;">Classic cuts, hot-towel shaves and lineups in a neighborhood landmark.</div>
+              <div style="display:flex;align-items:center;gap:7px;margin-top:6px;"><span style="font-size:11.5px;font-weight:800;color:#2A1607;"><span style="color:#C8860A;">★</span> 4.7</span><span style="font-size:9px;font-weight:800;color:#F4E6CA;background:#2A1607;padding:3px 6px;border-radius:999px;display:inline-flex;gap:3px;align-items:center;"><svg width="8" height="8" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#E0A93B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>BLACK-OWNED</span></div>
+            </div>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#C8860A" style="position:absolute;top:13px;right:13px;"><path d="M6 4h12v16l-6-4-6 4V4Z"/></svg>
+          </div>
+          <div style="display:flex;gap:12px;background:#fff;border:1px solid #ECE3D4;border-radius:18px;padding:12px;position:relative;">
+            <div style="width:74px;height:74px;border-radius:14px;flex:none;background:repeating-linear-gradient(135deg,#E7DECC,#E7DECC 7px,#DDD0B9 7px,#DDD0B9 14px);"></div>
+            <div style="flex:1;min-width:0;">
+              <div style="font-size:14.5px;font-weight:800;color:#2A1607;">Augusta Wellness Collective</div>
+              <div style="font-size:11.5px;color:#988671;margin-top:1px;">Health &amp; Wellness · 1.1 mi</div>
+              <div class="clamp2" style="font-size:11.5px;color:#7C6A56;margin-top:5px;line-height:1.35;">Holistic care, massage therapy and community fitness classes.</div>
+              <div style="display:flex;align-items:center;gap:7px;margin-top:6px;"><span style="font-size:11.5px;font-weight:800;color:#2A1607;"><span style="color:#C8860A;">★</span> 4.7</span><span style="font-size:9px;font-weight:800;color:#F4E6CA;background:#2A1607;padding:3px 6px;border-radius:999px;display:inline-flex;gap:3px;align-items:center;"><svg width="8" height="8" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#E0A93B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>BLACK-OWNED</span></div>
+            </div>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#C8860A" style="position:absolute;top:13px;right:13px;"><path d="M6 4h12v16l-6-4-6 4V4Z"/></svg>
+          </div>
+        </div>
+        <!-- bottom nav: Saved active -->
+        <div style="height:74px;flex:none;background:rgba(255,255,255,0.94);backdrop-filter:blur(10px);border-top:1px solid #ECE3D4;display:flex;align-items:center;justify-content:space-around;padding:8px 12px 16px;">
+          <div style="display:flex;flex-direction:column;align-items:center;gap:4px;color:#B0A18E;"><svg width="23" height="23" viewBox="0 0 24 24" fill="none"><path d="M4 11 12 4l8 7M6 10v9h12v-9" stroke="#B0A18E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span style="font-size:10px;font-weight:600;">Home</span></div>
+          <div style="display:flex;flex-direction:column;align-items:center;gap:4px;color:#B0A18E;"><svg width="23" height="23" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="#B0A18E" stroke-width="2"/><path d="m20 20-3.2-3.2" stroke="#B0A18E" stroke-width="2" stroke-linecap="round"/></svg><span style="font-size:10px;font-weight:600;">Search</span></div>
+          <div style="display:flex;flex-direction:column;align-items:center;gap:4px;color:#3B1F0A;"><svg width="23" height="23" viewBox="0 0 24 24" fill="#C8860A"><path d="M6 4h12v16l-6-4-6 4V4Z" stroke="#3B1F0A" stroke-width="1.5" stroke-linejoin="round"/></svg><span style="font-size:10px;font-weight:800;">Saved</span></div>
+          <div style="display:flex;flex-direction:column;align-items:center;gap:4px;color:#B0A18E;"><svg width="23" height="23" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.6" stroke="#B0A18E" stroke-width="2"/><path d="M5 20c0-3.3 3.1-5.5 7-5.5s7 2.2 7 5.5" stroke="#B0A18E" stroke-width="2" stroke-linecap="round"/></svg><span style="font-size:10px;font-weight:600;">Profile</span></div>
+        </div>
+      </div>
+      <span style="font-size:12px;font-weight:800;letter-spacing:2px;color:#8A7560;text-transform:uppercase;">04 · Saved Businesses</span>
+    </div>
+
+    <!-- ░░░░░░░░░░░░░░░░░░ SCREEN 5 — MY PROFILE ░░░░░░░░░░░░░░░░░░ -->
+    <div data-screen-label="My Profile" style="display:flex;flex-direction:column;align-items:center;gap:16px;">
+      <div style="width:375px;height:812px;background:#F5EFE6;border-radius:46px;overflow:hidden;position:relative;display:flex;flex-direction:column;box-shadow:0 34px 70px -26px rgba(59,31,10,0.45),0 0 0 11px #140c05,0 0 0 12px #34230f;">
+        <div style="position:absolute;top:0;left:50%;transform:translateX(-50%);width:148px;height:30px;background:#140c05;border-radius:0 0 18px 18px;z-index:6;"></div>
+        <div style="height:52px;flex:none;display:flex;align-items:center;justify-content:space-between;padding:14px 28px 0 32px;position:relative;z-index:5;">
+          <span style="font-weight:700;font-size:15px;color:#2A1607;">9:41</span>
+          <div style="display:flex;align-items:center;gap:7px;color:#2A1607;">
+            <svg width="18" height="12" viewBox="0 0 18 12" fill="none"><rect x="0" y="7" width="3" height="5" rx="1" fill="#2A1607"/><rect x="5" y="4" width="3" height="8" rx="1" fill="#2A1607"/><rect x="10" y="2" width="3" height="10" rx="1" fill="#2A1607"/><rect x="15" y="0" width="3" height="12" rx="1" fill="#2A1607"/></svg>
+            <svg width="16" height="12" viewBox="0 0 16 12" fill="none"><path d="M8 11.2 1 4.4a9.7 9.7 0 0 1 14 0L8 11.2Z" stroke="#2A1607" stroke-width="1.6" fill="none"/><circle cx="8" cy="9.4" r="1.3" fill="#2A1607"/></svg>
+            <svg width="26" height="13" viewBox="0 0 26 13" fill="none"><rect x="0.6" y="0.6" width="21" height="11.8" rx="3" stroke="#2A1607" stroke-width="1.2"/><rect x="2.4" y="2.4" width="16" height="8.2" rx="1.6" fill="#2A1607"/><rect x="23" y="4" width="2" height="5" rx="1" fill="#2A1607"/></svg>
+          </div>
+        </div>
+        <div class="hf-scrollhint" style="flex:1;overflow:hidden;padding:6px 22px 0;display:flex;flex-direction:column;">
+          <!-- identity -->
+          <div style="display:flex;align-items:center;gap:14px;">
+            <div style="width:60px;height:60px;border-radius:50%;background:#3B1F0A;color:#F4E6CA;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:22px;">AJ</div>
+            <div><div style="font-family:'Newsreader',serif;font-size:22px;font-weight:600;color:#2A1607;">Amara Johnson</div><div style="font-size:12.5px;color:#988671;font-weight:600;margin-top:2px;">Augusta, GA</div></div>
+          </div>
+          <!-- list your business -->
+          <div style="margin-top:18px;background:linear-gradient(135deg,#3B1F0A,#5A3413);border-radius:20px;padding:18px;color:#F4E6CA;position:relative;overflow:hidden;">
+            <div style="font-size:16px;font-weight:800;">List Your Business</div>
+            <div style="font-size:12px;color:#E3CFA6;margin-top:4px;line-height:1.4;">Join 480+ verified Black-owned businesses reaching your community.</div>
+            <div style="display:flex;gap:14px;margin-top:13px;">
+              <div><div style="font-size:15px;font-weight:800;color:#E5B65A;">Free</div><div style="font-size:9.5px;color:#C9B186;">forever</div></div>
+              <div><div style="font-size:15px;font-weight:800;color:#E5B65A;">Verified</div><div style="font-size:9.5px;color:#C9B186;">community</div></div>
+              <div><div style="font-size:15px;font-weight:800;color:#E5B65A;">10K+</div><div style="font-size:9.5px;color:#C9B186;">monthly visits</div></div>
+            </div>
+            <div style="margin-top:14px;background:#C8860A;color:#2A1607;font-size:13px;font-weight:800;text-align:center;padding:11px;border-radius:12px;">Submit Your Business →</div>
+          </div>
+          <!-- my activity -->
+          <div style="margin-top:18px;font-size:11px;font-weight:800;letter-spacing:1.5px;color:#A07A3C;text-transform:uppercase;">My Activity</div>
+          <div style="margin-top:10px;display:flex;gap:10px;">
+            <div style="flex:1;background:#fff;border:1px solid #ECE3D4;border-radius:16px;padding:13px 10px;text-align:center;"><div style="font-size:21px;font-weight:800;color:#2A1607;">12</div><div style="font-size:10px;color:#988671;font-weight:600;margin-top:2px;">My Reviews</div></div>
+            <div style="flex:1;background:#fff;border:1px solid #ECE3D4;border-radius:16px;padding:13px 10px;text-align:center;"><div style="font-size:21px;font-weight:800;color:#2A1607;">6</div><div style="font-size:10px;color:#988671;font-weight:600;margin-top:2px;">Saved</div></div>
+            <div style="flex:1;background:#fff;border:1px solid #ECE3D4;border-radius:16px;padding:13px 10px;text-align:center;"><div style="font-size:21px;font-weight:800;color:#2A1607;">3</div><div style="font-size:10px;color:#988671;font-weight:600;margin-top:2px;">Edits</div></div>
+          </div>
+          <!-- settings -->
+          <div style="margin-top:18px;font-size:11px;font-weight:800;letter-spacing:1.5px;color:#A07A3C;text-transform:uppercase;">Settings</div>
+          <div style="margin-top:10px;background:#fff;border:1px solid #ECE3D4;border-radius:16px;overflow:hidden;">
+            <div style="display:flex;align-items:center;gap:12px;padding:13px 15px;border-bottom:1px solid #F1E9DB;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-5-7-11a7 7 0 0 1 14 0c0 6-7 11-7 11Z" stroke="#C8860A" stroke-width="1.8"/><circle cx="12" cy="10" r="2.3" stroke="#C8860A" stroke-width="1.8"/></svg><span style="flex:1;font-size:13.5px;color:#3B1F0A;font-weight:600;">Location Preferences</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="m9 6 6 6-6 6" stroke="#B0A18E" stroke-width="2" stroke-linecap="round"/></svg></div>
+            <div style="display:flex;align-items:center;gap:12px;padding:13px 15px;border-bottom:1px solid #F1E9DB;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 9a6 6 0 0 1 12 0c0 5 2 6 2 6H4s2-1 2-6Z" stroke="#C8860A" stroke-width="1.8" stroke-linejoin="round"/><path d="M10 19a2 2 0 0 0 4 0" stroke="#C8860A" stroke-width="1.8"/></svg><span style="flex:1;font-size:13.5px;color:#3B1F0A;font-weight:600;">Notifications</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="m9 6 6 6-6 6" stroke="#B0A18E" stroke-width="2" stroke-linecap="round"/></svg></div>
+            <div style="display:flex;align-items:center;gap:12px;padding:13px 15px;border-bottom:1px solid #F1E9DB;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#C8860A" stroke-width="1.8"/><path d="M12 11v5M12 8v.01" stroke="#C8860A" stroke-width="2" stroke-linecap="round"/></svg><span style="flex:1;font-size:13.5px;color:#3B1F0A;font-weight:600;">About Healthy Futures</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="m9 6 6 6-6 6" stroke="#B0A18E" stroke-width="2" stroke-linecap="round"/></svg></div>
+            <div style="display:flex;align-items:center;gap:12px;padding:13px 15px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 5h16v11H8l-4 4V5Z" stroke="#C8860A" stroke-width="1.8" stroke-linejoin="round"/></svg><span style="flex:1;font-size:13.5px;color:#3B1F0A;font-weight:600;">Contact / Feedback</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="m9 6 6 6-6 6" stroke="#B0A18E" stroke-width="2" stroke-linecap="round"/></svg></div>
+          </div>
+        </div>
+        <!-- bottom nav: Profile active -->
+        <div style="height:74px;flex:none;background:rgba(255,255,255,0.94);backdrop-filter:blur(10px);border-top:1px solid #ECE3D4;display:flex;align-items:center;justify-content:space-around;padding:8px 12px 16px;">
+          <div style="display:flex;flex-direction:column;align-items:center;gap:4px;color:#B0A18E;"><svg width="23" height="23" viewBox="0 0 24 24" fill="none"><path d="M4 11 12 4l8 7M6 10v9h12v-9" stroke="#B0A18E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span style="font-size:10px;font-weight:600;">Home</span></div>
+          <div style="display:flex;flex-direction:column;align-items:center;gap:4px;color:#B0A18E;"><svg width="23" height="23" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="#B0A18E" stroke-width="2"/><path d="m20 20-3.2-3.2" stroke="#B0A18E" stroke-width="2" stroke-linecap="round"/></svg><span style="font-size:10px;font-weight:600;">Search</span></div>
+          <div style="display:flex;flex-direction:column;align-items:center;gap:4px;color:#B0A18E;"><svg width="23" height="23" viewBox="0 0 24 24" fill="none"><path d="M6 4h12v16l-6-4-6 4V4Z" stroke="#B0A18E" stroke-width="2" stroke-linejoin="round"/></svg><span style="font-size:10px;font-weight:600;">Saved</span></div>
+          <div style="display:flex;flex-direction:column;align-items:center;gap:4px;color:#3B1F0A;"><svg width="23" height="23" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.6" stroke="#3B1F0A" stroke-width="2"/><path d="M5 20c0-3.3 3.1-5.5 7-5.5s7 2.2 7 5.5" stroke="#3B1F0A" stroke-width="2" stroke-linecap="round"/></svg><span style="font-size:10px;font-weight:800;">Profile</span></div>
+        </div>
+      </div>
+      <span style="font-size:12px;font-weight:800;letter-spacing:2px;color:#8A7560;text-transform:uppercase;">05 · My Profile</span>
+    </div>
+
+    <!-- ░░░░░░░░░░░░░░░░░░ SCREEN 6 — SUBMIT BUSINESS ░░░░░░░░░░░░░░░░░░ -->
+    <div data-screen-label="Submit Business" style="display:flex;flex-direction:column;align-items:center;gap:16px;">
+      <div style="width:375px;height:812px;background:#F5EFE6;border-radius:46px;overflow:hidden;position:relative;display:flex;flex-direction:column;box-shadow:0 34px 70px -26px rgba(59,31,10,0.45),0 0 0 11px #140c05,0 0 0 12px #34230f;">
+        <div style="position:absolute;top:0;left:50%;transform:translateX(-50%);width:148px;height:30px;background:#140c05;border-radius:0 0 18px 18px;z-index:6;"></div>
+        <div style="height:52px;flex:none;display:flex;align-items:center;justify-content:space-between;padding:14px 28px 0 32px;position:relative;z-index:5;">
+          <span style="font-weight:700;font-size:15px;color:#2A1607;">9:41</span>
+          <div style="display:flex;align-items:center;gap:7px;color:#2A1607;">
+            <svg width="18" height="12" viewBox="0 0 18 12" fill="none"><rect x="0" y="7" width="3" height="5" rx="1" fill="#2A1607"/><rect x="5" y="4" width="3" height="8" rx="1" fill="#2A1607"/><rect x="10" y="2" width="3" height="10" rx="1" fill="#2A1607"/><rect x="15" y="0" width="3" height="12" rx="1" fill="#2A1607"/></svg>
+            <svg width="16" height="12" viewBox="0 0 16 12" fill="none"><path d="M8 11.2 1 4.4a9.7 9.7 0 0 1 14 0L8 11.2Z" stroke="#2A1607" stroke-width="1.6" fill="none"/><circle cx="8" cy="9.4" r="1.3" fill="#2A1607"/></svg>
+            <svg width="26" height="13" viewBox="0 0 26 13" fill="none"><rect x="0.6" y="0.6" width="21" height="11.8" rx="3" stroke="#2A1607" stroke-width="1.2"/><rect x="2.4" y="2.4" width="16" height="8.2" rx="1.6" fill="#2A1607"/><rect x="23" y="4" width="2" height="5" rx="1" fill="#2A1607"/></svg>
+          </div>
+        </div>
+        <!-- top bar -->
+        <div style="padding:4px 22px 12px;flex:none;display:flex;align-items:center;gap:12px;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6 6 18" stroke="#2A1607" stroke-width="2" stroke-linecap="round"/></svg>
+          <span style="font-size:16px;font-weight:800;color:#2A1607;">List Your Business</span>
+        </div>
+        <!-- step indicator -->
+        <div style="padding:0 22px 4px;flex:none;">
+          <div style="display:flex;align-items:center;gap:6px;">
+            <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;"><div style="width:30px;height:30px;border-radius:50%;background:#C8860A;color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;">1</div><span style="font-size:9.5px;font-weight:800;color:#3B1F0A;">Business Info</span></div>
+            <div style="height:2px;flex:none;width:18px;background:#E0D4BD;margin-bottom:18px;"></div>
+            <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;"><div style="width:30px;height:30px;border-radius:50%;background:#fff;border:1.5px solid #E0D4BD;color:#B0A18E;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;">2</div><span style="font-size:9.5px;font-weight:600;color:#A9967E;text-align:center;line-height:1.1;">Contact &amp; Location</span></div>
+            <div style="height:2px;flex:none;width:18px;background:#E0D4BD;margin-bottom:18px;"></div>
+            <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;"><div style="width:30px;height:30px;border-radius:50%;background:#fff;border:1.5px solid #E0D4BD;color:#B0A18E;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;">3</div><span style="font-size:9.5px;font-weight:600;color:#A9967E;text-align:center;line-height:1.1;">Review &amp; Submit</span></div>
+          </div>
+        </div>
+        <!-- form -->
+        <div class="hf-scrollhint" style="flex:1;overflow:hidden;padding:14px 22px 0;display:flex;flex-direction:column;gap:15px;">
+          <div style="font-size:13px;font-weight:800;color:#2A1607;">Step 1 of 3 · Business Info</div>
+          <div>
+            <label style="font-size:11.5px;font-weight:700;color:#5C4A36;">Business Name</label>
+            <div style="margin-top:6px;background:#fff;border:1px solid #E8DECB;border-radius:13px;padding:13px 14px;font-size:14px;color:#2A1607;font-weight:600;">Royal Crown Barbershop</div>
+          </div>
+          <div>
+            <label style="font-size:11.5px;font-weight:700;color:#5C4A36;">Owner / Contact Name</label>
+            <div style="margin-top:6px;background:#fff;border:1px solid #E8DECB;border-radius:13px;padding:13px 14px;font-size:14px;color:#A9967E;">e.g. Darius Forrest</div>
+          </div>
+          <div>
+            <label style="font-size:11.5px;font-weight:700;color:#5C4A36;">Category</label>
+            <div style="margin-top:6px;background:#fff;border:1px solid #E8DECB;border-radius:13px;padding:13px 14px;font-size:14px;color:#2A1607;font-weight:600;display:flex;align-items:center;justify-content:space-between;">Beauty &amp; Grooming<svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="m6 9 6 6 6-6" stroke="#A9967E" stroke-width="2" stroke-linecap="round"/></svg></div>
+          </div>
+          <div>
+            <label style="font-size:11.5px;font-weight:700;color:#5C4A36;">Business Description</label>
+            <div style="margin-top:6px;background:#fff;border:1px solid #E8DECB;border-radius:13px;padding:13px 14px;font-size:13px;color:#5C4A36;line-height:1.45;min-height:72px;">Premium barbering — fades, beard sculpting and hot-towel shaves in a relaxed, welcoming space.</div>
+            <div style="text-align:right;font-size:10.5px;color:#A9967E;margin-top:5px;">94 / 300</div>
+          </div>
+        </div>
+        <!-- footer -->
+        <div style="flex:none;padding:14px 22px 22px;background:linear-gradient(transparent,#F5EFE6 30%);">
+          <div style="background:#3B1F0A;color:#F4E6CA;font-size:14.5px;font-weight:800;text-align:center;padding:15px;border-radius:15px;">Next: Contact &amp; Location →</div>
+          <div style="font-size:10.5px;color:#988671;text-align:center;margin-top:10px;line-height:1.4;">Free forever. Listings reviewed within 2–3 business days.</div>
+        </div>
+      </div>
+      <span style="font-size:12px;font-weight:800;letter-spacing:2px;color:#8A7560;text-transform:uppercase;">06 · Submit — Step 1 of 3</span>
+    </div>
+
+    <!-- ░░░░░░░░░░░░░░░░░░ SCREEN 7 — ADMIN PANEL ░░░░░░░░░░░░░░░░░░ -->
+    <div data-screen-label="Admin Panel" style="display:flex;flex-direction:column;align-items:center;gap:16px;">
+      <div style="width:375px;height:812px;background:#F2F0EC;border-radius:46px;overflow:hidden;position:relative;display:flex;flex-direction:column;box-shadow:0 34px 70px -26px rgba(59,31,10,0.45),0 0 0 11px #140c05,0 0 0 12px #34230f;">
+        <div style="position:absolute;top:0;left:50%;transform:translateX(-50%);width:148px;height:30px;background:#140c05;border-radius:0 0 18px 18px;z-index:6;"></div>
+        <div style="height:52px;flex:none;display:flex;align-items:center;justify-content:space-between;padding:14px 28px 0 32px;position:relative;z-index:5;background:#2A1607;">
+          <span style="font-weight:700;font-size:15px;color:#F4E6CA;">9:41</span>
+          <div style="display:flex;align-items:center;gap:7px;">
+            <svg width="18" height="12" viewBox="0 0 18 12" fill="none"><rect x="0" y="7" width="3" height="5" rx="1" fill="#F4E6CA"/><rect x="5" y="4" width="3" height="8" rx="1" fill="#F4E6CA"/><rect x="10" y="2" width="3" height="10" rx="1" fill="#F4E6CA"/><rect x="15" y="0" width="3" height="12" rx="1" fill="#F4E6CA"/></svg>
+            <svg width="16" height="12" viewBox="0 0 16 12" fill="none"><path d="M8 11.2 1 4.4a9.7 9.7 0 0 1 14 0L8 11.2Z" stroke="#F4E6CA" stroke-width="1.6" fill="none"/><circle cx="8" cy="9.4" r="1.3" fill="#F4E6CA"/></svg>
+            <svg width="26" height="13" viewBox="0 0 26 13" fill="none"><rect x="0.6" y="0.6" width="21" height="11.8" rx="3" stroke="#F4E6CA" stroke-width="1.2"/><rect x="2.4" y="2.4" width="16" height="8.2" rx="1.6" fill="#F4E6CA"/><rect x="23" y="4" width="2" height="5" rx="1" fill="#F4E6CA"/></svg>
+          </div>
+        </div>
+        <!-- admin header -->
+        <div style="background:#2A1607;padding:6px 22px 18px;flex:none;">
+          <div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#C8860A;text-transform:uppercase;">Admin Panel</div>
+          <div style="font-family:'Newsreader',serif;font-size:22px;font-weight:600;color:#F4E6CA;margin-top:2px;">Healthy Futures</div>
+          <!-- stats -->
+          <div style="display:flex;gap:9px;margin-top:14px;">
+            <div style="flex:1;background:rgba(200,134,10,0.16);border:1px solid rgba(200,134,10,0.4);border-radius:14px;padding:11px;"><div style="font-size:22px;font-weight:800;color:#E5B65A;">14</div><div style="font-size:10px;color:#D9C49C;font-weight:600;">Pending</div></div>
+            <div style="flex:1;background:rgba(31,138,91,0.16);border:1px solid rgba(31,138,91,0.4);border-radius:14px;padding:11px;"><div style="font-size:22px;font-weight:800;color:#5FD39A;">482</div><div style="font-size:10px;color:#B9D6C6;font-weight:600;">Approved</div></div>
+            <div style="flex:1;background:rgba(70,120,210,0.16);border:1px solid rgba(70,120,210,0.4);border-radius:14px;padding:11px;"><div style="font-size:22px;font-weight:800;color:#7FA8F0;">512</div><div style="font-size:10px;color:#BFCDE8;font-weight:600;">Total</div></div>
+          </div>
+        </div>
+        <!-- tabs -->
+        <div style="padding:14px 22px 12px;flex:none;display:flex;gap:7px;">
+          <span style="font-size:12px;font-weight:800;color:#fff;background:#3B1F0A;padding:7px 13px;border-radius:999px;">All</span>
+          <span style="font-size:12px;font-weight:700;color:#5C4A36;background:#fff;border:1px solid #E2DACC;padding:7px 13px;border-radius:999px;">Pending</span>
+          <span style="font-size:12px;font-weight:700;color:#5C4A36;background:#fff;border:1px solid #E2DACC;padding:7px 13px;border-radius:999px;">Approved</span>
+          <span style="font-size:12px;font-weight:700;color:#5C4A36;background:#fff;border:1px solid #E2DACC;padding:7px 13px;border-radius:999px;">Rejected</span>
+        </div>
+        <!-- list -->
+        <div class="hf-scrollhint" style="flex:1;overflow:hidden;padding:0 18px;display:flex;flex-direction:column;gap:11px;">
+          <div style="background:#fff;border:1px solid #E7E1D6;border-radius:16px;padding:14px;">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px;"><div><div style="font-size:14px;font-weight:800;color:#2A1607;">Royal Crown Barbershop</div><div style="font-size:11px;color:#988671;margin-top:2px;">Beauty · Augusta, GA · Jun 8</div></div><span style="font-size:9px;font-weight:800;color:#B07A0A;background:#FBEFD4;padding:3px 8px;border-radius:999px;flex:none;">PENDING</span></div>
+            <div style="display:flex;gap:8px;margin-top:12px;">
+              <div style="flex:1;background:#1F8A5B;color:#fff;font-size:12px;font-weight:800;text-align:center;padding:9px;border-radius:11px;">Approve</div>
+              <div style="flex:1;background:#fff;border:1px solid #E2DACC;color:#3B1F0A;font-size:12px;font-weight:700;text-align:center;padding:9px;border-radius:11px;">Edit</div>
+              <div style="flex:1;background:#fff;border:1px solid #E2B6AC;color:#C0492F;font-size:12px;font-weight:800;text-align:center;padding:9px;border-radius:11px;">Reject</div>
+            </div>
+          </div>
+          <div style="background:#fff;border:1px solid #E7E1D6;border-radius:16px;padding:14px;">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px;"><div><div style="font-size:14px;font-weight:800;color:#2A1607;">GreenLeaf Juice Bar</div><div style="font-size:11px;color:#988671;margin-top:2px;">Health · Augusta, GA · Jun 7</div></div><span style="font-size:9px;font-weight:800;color:#B07A0A;background:#FBEFD4;padding:3px 8px;border-radius:999px;flex:none;">PENDING</span></div>
+            <div style="display:flex;gap:8px;margin-top:12px;">
+              <div style="flex:1;background:#1F8A5B;color:#fff;font-size:12px;font-weight:800;text-align:center;padding:9px;border-radius:11px;">Approve</div>
+              <div style="flex:1;background:#fff;border:1px solid #E2DACC;color:#3B1F0A;font-size:12px;font-weight:700;text-align:center;padding:9px;border-radius:11px;">Edit</div>
+              <div style="flex:1;background:#fff;border:1px solid #E2B6AC;color:#C0492F;font-size:12px;font-weight:800;text-align:center;padding:9px;border-radius:11px;">Reject</div>
+            </div>
+          </div>
+          <div style="background:#fff;border:1px solid #E7E1D6;border-radius:16px;padding:14px;">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px;"><div><div style="font-size:14px;font-weight:800;color:#2A1607;">Mama's Southern Kitchen</div><div style="font-size:11px;color:#988671;margin-top:2px;">Food &amp; Dining · Augusta, GA · Jun 5</div></div><span style="font-size:9px;font-weight:800;color:#1F8A5B;background:#E4F1EA;padding:3px 8px;border-radius:999px;flex:none;">APPROVED</span></div>
+            <div style="display:flex;gap:8px;margin-top:12px;">
+              <div style="flex:1;background:#fff;border:1px solid #E2DACC;color:#3B1F0A;font-size:12px;font-weight:700;text-align:center;padding:9px;border-radius:11px;">Edit</div>
+              <div style="flex:1;background:#fff;border:1px solid #E2B6AC;color:#C0492F;font-size:12px;font-weight:800;text-align:center;padding:9px;border-radius:11px;">Remove</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span style="font-size:12px;font-weight:800;letter-spacing:2px;color:#8A7560;text-transform:uppercase;">07 · Admin Panel</span>
+    </div>
+
+    <!-- ░░░░░░░░░░░░░░░░░░ SCREEN 8 — LOCATION PERMISSION ░░░░░░░░░░░░░░░░░░ -->
+    <div data-screen-label="Location Permission" style="display:flex;flex-direction:column;align-items:center;gap:16px;">
+      <div style="width:375px;height:812px;background:#F5EFE6;border-radius:46px;overflow:hidden;position:relative;display:flex;flex-direction:column;box-shadow:0 34px 70px -26px rgba(59,31,10,0.45),0 0 0 11px #140c05,0 0 0 12px #34230f;">
+        <!-- blurred home background -->
+        <div style="position:absolute;inset:0;filter:blur(7px);transform:scale(1.04);opacity:0.85;">
+          <div style="height:52px;display:flex;align-items:center;justify-content:space-between;padding:14px 28px 0 32px;"><span style="font-weight:700;font-size:15px;color:#2A1607;">9:41</span></div>
+          <div style="padding:14px 22px;">
+            <div style="height:24px;width:60%;background:#E3D7C2;border-radius:6px;"></div>
+            <div style="margin-top:18px;height:48px;background:#fff;border:1px solid #E8DECB;border-radius:16px;"></div>
+            <div style="display:flex;gap:8px;margin-top:14px;"><div style="height:32px;width:78px;background:#C8860A;border-radius:999px;"></div><div style="height:32px;width:78px;background:#fff;border:1px solid #E8DECB;border-radius:999px;"></div><div style="height:32px;width:78px;background:#fff;border:1px solid #E8DECB;border-radius:999px;"></div></div>
+            <div style="display:flex;gap:14px;margin-top:22px;"><div style="height:150px;width:188px;background:#fff;border-radius:18px;"></div><div style="height:150px;width:188px;background:#fff;border-radius:18px;"></div></div>
+            <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:11px;margin-top:22px;"><div style="height:56px;background:#fff;border-radius:18px;"></div><div style="height:56px;background:#fff;border-radius:18px;"></div><div style="height:56px;background:#fff;border-radius:18px;"></div><div style="height:56px;background:#fff;border-radius:18px;"></div></div>
+          </div>
+        </div>
+        <!-- scrim -->
+        <div style="position:absolute;inset:0;background:rgba(20,12,5,0.5);"></div>
+        <!-- modal -->
+        <div style="position:absolute;left:18px;right:18px;bottom:22px;background:#F5EFE6;border-radius:28px;padding:26px 24px 22px;box-shadow:0 -20px 60px -20px rgba(0,0,0,0.5);">
+          <div style="width:66px;height:66px;border-radius:20px;background:#3B1F0A;display:flex;align-items:center;justify-content:center;margin:0 auto;box-shadow:0 10px 24px -8px rgba(59,31,10,0.5);">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none"><path d="M12 22s-7-5-7-11a7 7 0 0 1 14 0c0 6-7 11-7 11Z" stroke="#C8860A" stroke-width="2"/><circle cx="12" cy="11" r="2.8" fill="#C8860A"/></svg>
+          </div>
+          <h3 style="font-family:'Newsreader',serif;font-size:24px;font-weight:600;color:#2A1607;text-align:center;margin:18px 0 0;">Allow Location Access</h3>
+          <p style="font-size:13.5px;color:#6E5C48;text-align:center;line-height:1.5;margin:10px 0 0;">We use your location only to show Black-owned businesses near you. Your location is <b style="color:#2A1607;">never stored or shared</b>.</p>
+          <div style="margin-top:20px;background:#3B1F0A;color:#F4E6CA;font-size:15px;font-weight:800;text-align:center;padding:16px;border-radius:16px;display:flex;align-items:center;justify-content:center;gap:8px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 22s-7-5-7-11a7 7 0 0 1 14 0c0 6-7 11-7 11Z" stroke="#C8860A" stroke-width="2"/><circle cx="12" cy="11" r="2.4" fill="#C8860A"/></svg>Allow Location Access</div>
+          <div style="margin-top:11px;text-align:center;font-size:14px;font-weight:800;color:#C8860A;padding:13px;">Enter Location Manually</div>
+          <div style="text-align:center;font-size:11px;color:#988671;margin-top:2px;">You can change this anytime in settings.</div>
+        </div>
+      </div>
+      <span style="font-size:12px;font-weight:800;letter-spacing:2px;color:#8A7560;text-transform:uppercase;">08 · Location Permission</span>
+    </div>
+
+  </div>
+</div>
+</x-dc>
+</body>
+</html>
