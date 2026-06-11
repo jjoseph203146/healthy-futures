@@ -29,8 +29,11 @@ export const metadata: Metadata = {
   },
   formatDetection: { telephone: false },
   icons: {
-    icon: "/icons/icon.svg",
-    apple: "/icons/icon-192.png",
+    icon: [
+      { url: "/icons/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icons/icon-512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: "/icons/apple-touch-icon.png",
   },
   openGraph: {
     title: "Healthy Futures — Black-Owned Business Directory",
